@@ -1,6 +1,5 @@
-
 .footer {
-    @include background-image(linear-gradient(to right, #673695 0%,#79a0d5 69%,#79a0d5 100%));
+    @include background-image($gradient);
     @include box-shadow(rgba(#000, 0.1) 10px 7px 15px inset);
     color: #fff;
     padding: 20px 0;

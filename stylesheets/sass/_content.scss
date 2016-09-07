@@ -1,8 +1,6 @@
 .content {
     margin-top: 30px;
     margin-bottom: 30px;
-    // padding-right: 20px;
-    // padding-left: 20px;
     &__layout {
         width: 1300px;
         margin-left: auto;
@@ -17,11 +15,6 @@
                 padding-left: 240px;
             }
         }
-        // &:after {
-        //     content: "";
-        //     display: table;
-        //     clear: both;
-        // }
          @include legacy-pie-clearfix;
     }
 }
@@ -33,9 +26,7 @@
 
 .sections-list {
     &__title {
-        // padding-left: 70px;
         padding-right: 45px;
-        // font-weight: 400;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 26px;
@@ -55,19 +46,19 @@
         &_color_violet {
             .sections-list__title,
             .label {
-                background-color: #7f489c
+                background-color: $violet
             }
         }
         &_color_dark-blue {
             .sections-list__title,
             .label {
-                background-color: #6053a3
+                background-color: $dark-blue
             }
         }
         &_color_blue {
             .sections-list__title,
             .label {
-                background-color : #79a0d5
+                background-color : $blue
             }
         }
         &:first-child {
@@ -75,24 +66,22 @@
         }
          @include legacy-pie-clearfix;
     }
-    // padding-right: 20px;
-    // border-right: 2px solid $basecolor;
 }
 
 .media-block {
     &_color_violet {
         .label {
-            background-color: #7f489c
+            background-color: $violet
         }
     }
     &_color_dark-blue {
         .label {
-            background-color: #6053a3
+            background-color: $dark-blue
         }
     }
     &_color_blue {
         .label {
-            background-color : #79a0d5
+            background-color : $blue
         }
     }
     &__image {
@@ -128,7 +117,6 @@
         }
     }
     &__information {
-        // border: 1px solid #939598;
         border: 1px solid #ccc;
         border-top: 0;
         font-size: 13px;
@@ -250,26 +238,3 @@
         max-width: 100%;
     }
 }
-
-// .carusel {
-//     &__arrow {
-//     width: 20px;
-//     height: 20px;
-//     position: absolute;
-//     top: 27%;
-//     margin-top: -10px;
-//     background-repeat: no-repeat;
-//     background-position: 50% 50%;
-//     background-size: 14px 20px;
-//     cursor: pointer;
-
-//         &_position_left {
-//             background-image: url(../images/svg/carusel-arrow-prev.svg);
-//             left: 0;
-//         }
-//         &_position_right {
-//             background-image: url(../images/svg/carusel-arrow-next.svg);
-//             right: 0;
-//         }
-//     }
-// }

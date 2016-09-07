@@ -12,7 +12,7 @@
         }
     }
     &__title {
-        @include background-image(linear-gradient(to right, #673695 0%,#79a0d5 69%,#79a0d5 100%));
+        @include background-image($gradient);
         color: #fff;
         font-weight: bold;
         padding: 4px 12px;
@@ -47,7 +47,7 @@
         margin-left: -1px;
     }
     &__view-all {
-        @include background-image(linear-gradient(to right, #673695 0%,#79a0d5 69%,#79a0d5 100%));
+        @include background-image($gradient);
         color: #fff;
         font-weight: bold;
         padding: 8px 12px;
@@ -126,6 +126,15 @@
                 }
             }
         }
+    }
+    &__views {
+        float: right;
+        background-image: url(../images/svg/icon-eye.svg);
+        background-position: 100% 50%;
+        // background-size: contain;
+        padding-right: 25px;
+        background-size: 20px;
+        background-repeat: no-repeat;
     }
     &__link {
         display: block;

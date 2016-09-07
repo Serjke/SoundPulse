@@ -1,5 +1,5 @@
 .header {
-    @include background-image(linear-gradient(to right, #673695 0%,#79a0d5 69%,#79a0d5 100%));
+    @include background-image($gradient);
     height: 120px;
     &__layout {
         width: 920px;
@@ -37,14 +37,6 @@
         color: #fff;
         margin-left: 10px;
         margin-right: 10px;
-        // text-decoration: none;
-        // &_sep:after {
-        //     content: ' | ';
-        //     color: #fff;
-        //     position: absolute;
-        //     margin-left: 6px;
-        //     text-decoration: none;
-        // }
         &:last-child {
             margin-right: 0
         }
