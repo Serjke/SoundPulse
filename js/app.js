@@ -2,7 +2,7 @@
 * @Author: komarov.s
 * @Date:   2016-09-02 16:47:54
 * @Last Modified by:   Sergey Komarov
-* @Last Modified time: 2016-09-07 10:14:01
+* @Last Modified time: 2016-09-07 11:17:17
 */
 
 'use strict';
@@ -83,7 +83,7 @@ $( document ).ready(function() {
     });
 
     // Show hidden menu elments in sidebar
-
+    var hiddenMenuLinks = $('.sidebar-menu__item_hidden');
     $('.sidebar-menu__link_see-all').on('click',function(e){
         e.preventDefault();
         var $this = $(this);
