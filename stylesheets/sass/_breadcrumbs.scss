@@ -1,0 +1,11 @@
+.breadcrumbs {
+    font-size: 15px;
+    margin-bottom: 20px;
+    &__item {
+        color: $basecolor;
+    }
+    &__link {
+        color: $basecolor;
+        text-decoration: none;
+    }
+}

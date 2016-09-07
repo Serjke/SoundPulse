@@ -1,0 +1,87 @@
+$basecolor : #7f489c;
+
+@font-face {
+    font-family: 'Futuris';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Futuris'), local('Futuris'),
+        url(fonts/futuris-cyrillic.woff) format('woff'),
+        url(fonts/futuris-cyrillic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Futuris';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Futuris bold'), local('Futuris bold'),
+        url(fonts/futuris-bold.woff) format('woff'),
+        url(fonts/futuris-bold.ttf) format('truetype');
+}
+
+* {
+    @include box-sizing(border-box);
+}
+
+*:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color:#79a0d5
+}
+
+::-moz-placeholder {
+    color:#79a0d5
+}
+
+:-moz-placeholder {
+    color:#79a0d5
+}
+
+:-ms-input-placeholder {
+    color:#79a0d5;
+}
+
+.page {
+    font-family: 'Helvetica Neue', 'Futuris', sans-serif, Arial;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4;
+     -webkit-text-size-adjust: 100%;
+     color: $basecolor;
+}
+
+.line_after {
+    padding-bottom: 15px;
+    position: relative;
+    &:before {
+        content: '';
+        height: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        @include background-image(linear-gradient(to left, #673695 0%,#79a0d5 69%,#79a0d5 100%));
+        @include box-shadow(0 3px 7px rgba(#000,0.3))
+    }
+}
+
+.input {
+    border: 1px solid #7f489c;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px 0 36px;
+    @include border-radius(16px);
+    width: 200px;
+    color: #79a0d5;
+    font-size: 12px;
+    -webkit-appearance: none;
+}
+
+.row {
+    @include legacy-pie-clearfix;
+    // margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
