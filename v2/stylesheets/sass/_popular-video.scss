@@ -1,0 +1,47 @@
+.popular-video {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &__layout {
+        width: 920px;
+        margin: 0 auto 30px;
+        @include legacy-pie-clearfix;
+    }
+    &__title {
+        background-color: $dark-blue;
+        color: #fff;
+        display: table;
+        margin: 0 auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        // font-weight: 400;
+        font-weight: bold;
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__view-all {
+        display: block;
+        clear: both;
+        width: 140px;
+        font-weight: bold;
+        margin: 20px auto 0;
+        // @include border-radius(16px);
+        text-decoration: none;
+        color: $dark-blue;
+        border: 1px solid $dark-blue;
+        text-align: center;
+        padding: 6px 0;
+        text-transform: uppercase;
+        &:hover {
+            color: #fff;
+            background-color: $dark-blue;
+        }
+    }
+}
+
+.video-carusel {
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+}

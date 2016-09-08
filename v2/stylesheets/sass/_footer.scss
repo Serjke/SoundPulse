@@ -1,0 +1,70 @@
+.footer {
+    @include background-image($gradient);
+    @include box-shadow(rgba(#000, 0.1) 10px 7px 15px inset);
+    color: #fff;
+    padding: 20px 0;
+    &__col {
+        float: left;
+        width: 25%;
+        padding-right: 10px;
+    }
+    &__layout {
+        width: 920px;
+        margin: 0 auto;
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+    &__title {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+    &-menu {
+        &__item {
+            margin-bottom: 4px;
+            margin-top: 4px;
+        }
+        &__link {
+            color: #fff;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.soc {
+    margin-top: 36px;
+    margin-bottom: 20px;
+    &__item {
+        display: inline-block;
+        // float: left;
+        background-position: 50% 50%;
+        background-size: 40px 40px;
+        width: 40px;
+        height: 40px;
+        margin: 0 2px;
+        &_youtube {
+            background-image: url(../images/svg/soc-youtube.svg);
+        }
+        &_twitter {
+            background-image: url(../images/svg/soc-twitter.svg);
+        }
+        &_vk {
+            background-image: url(../images/svg/soc-vk.svg);
+        }
+        &_fb {
+            background-image: url(../images/svg/soc-fb.svg);
+        }
+
+    }
+    &__link {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}

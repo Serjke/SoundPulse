@@ -1,0 +1,14 @@
+.slider {
+    background-color: #dcdcdc;
+    margin-bottom: 30px;
+    &__layout {
+        width: 920px;
+        margin: 0 auto;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        img {
+            display: block
+        }
+    }
+}
