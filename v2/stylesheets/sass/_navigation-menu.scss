@@ -1,5 +1,7 @@
 .navigation-menu {
     background-color: #e7e8e9;
+    width: 1300px;
+    margin: 0 auto;
     @include box-shadow(inset 0px 6px 9px -3px rgba(#000000,0.15));
     &__layout {
         width: 920px;
@@ -12,15 +14,15 @@
     display: table;
     width: 100%;
     padding-right: 220px;
+    font-size: 15px;
     &__item {
         display: table-cell;
         width: 1%;
         text-align: center;
+        border-bottom: 2px solid transparent;
         &:hover {
-            background-color: rgba(#7f489c, .6);
-            .nav__link {
-                color: #fff;
-            }
+            border-color: $basecolor;
+            background-color: rgb(223, 221, 225);
         }
         &_open {
             &_true {
@@ -43,6 +45,7 @@
     z-index: 11;
     min-width: 160px;
     left: 0;
+    top: 46px;
     right: 0;
         a {
             display: block;
@@ -50,7 +53,7 @@
             text-decoration: none;
             // border-left: 1px solid rgba(#ccc, .85);
             color: $basecolor;
-            border-bottom: 1px solid transparent;
+            border-bottom: 2px solid transparent;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -65,7 +68,6 @@
         padding: 10px;
         color: $basecolor;
         text-decoration: none;
-        font-size: 18px;
         &_dropdown:after {
             content: '';
             background-image: url(../images/svg/nav-triangle.svg);

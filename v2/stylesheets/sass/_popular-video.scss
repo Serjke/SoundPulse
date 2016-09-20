@@ -28,14 +28,15 @@
         margin: 20px auto 0;
         // @include border-radius(16px);
         text-decoration: none;
-        color: $dark-blue;
-        border: 1px solid $dark-blue;
+        color: #4f4d56;
+        border: 1px solid #4f4d56;
         text-align: center;
         padding: 6px 0;
         text-transform: uppercase;
         &:hover {
             color: #fff;
             background-color: $dark-blue;
+            border-color: $dark-blue;
         }
     }
 }

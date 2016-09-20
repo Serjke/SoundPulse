@@ -16,7 +16,8 @@
         min-width: 300px;
         padding-left: 80px;
         text-align: left;
-        background-color: #6b4ea4;
+        // background-color: #6b4ea4;
+        background-color: #424242;
     }
     &__title-row {
         background-color: #e2e3e4;
@@ -65,42 +66,21 @@
             margin-bottom: 16px;
         }
     }
-    &_color {
-        &_violet {
-            color: $violet;
-            .article-info__category {
-                color: $violet ;
-            }
-            .article__title,
-            .label {
-                background-color: $violet ;
-            }
-        }
-        &_dark-blue {
-            color: $dark-blue;
-            .article-info__category {
-                color: $dark-blue;
-            }
-            .article__title,
-            .label {
-                background-color: $dark-blue;
-            }
-        }
-        &_blue {
-            color: $blue;
-            .article-info__category {
-                color: $blue;
-            }
-            .article__title,
-            .label {
-                background-color: $blue;
-            }
-        }
-    }
 }
 
 .article-title {
     font-weight: bold;
+}
+
+.article-block {
+    &__title {
+        border-bottom: 1px solid #dcdcdc;
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: 18px;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
 }
 
 .article-info {
@@ -108,7 +88,7 @@
     clear: both;
     &__more {
         float: right;
-        color: $basecolor;
+        color: #7f489c;
         // @include border-radius(16px);
         // text-decoration: none;
 
@@ -123,7 +103,7 @@
 
     &__back {
         // float: right;
-        color: $basecolor;
+        color: #7f489c;
         font-weight: bold;
         text-transform: uppercase;
         &:hover {
@@ -131,26 +111,36 @@
         }
     }
     &__category {
-        padding: 6px 0 6px 60px;
-        text-transform: uppercase;
+        padding: 6px 0 6px 0;
         display: inline-block;
         font-weight: bold;
-        text-decoration: none;
-        background-position: 0 50%;
-        background-size: 50px 50px;
-        background-repeat: no-repeat;
         &_icon {
             &_beginers {
                 background-image: url(../images/svg/category-beginers.svg);
-                color: $blue
+                color: $blue;
+                background-position: 0 50%;
+                background-size: 50px 50px;
+                background-repeat: no-repeat;
+                padding: 6px 0 6px 60px;
+                text-transform: uppercase;
             }
             &_podcasts {
                 background-image: url(../images/svg/category-podcasts.svg);
-                color: $violet
+                color: $violet;
+                background-position: 0 50%;
+                background-size: 50px 50px;
+                background-repeat: no-repeat;
+                padding: 6px 0 6px 60px;
+                text-transform: uppercase;
             }
             &_theory {
                 background-image: url(../images/svg/category-theory.svg);
-                color: $dark-blue
+                color: $dark-blue;
+                background-position: 0 50%;
+                background-size: 50px 50px;
+                background-repeat: no-repeat;
+                padding: 6px 0 6px 60px;
+                text-transform: uppercase;
             }
         }
     }

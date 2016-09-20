@@ -1,10 +1,13 @@
 .header {
     @include background-image($gradient);
-    height: 90px;
+    height: 70px;
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
     &__layout {
         width: 920px;
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 8px 0px 0;
     }
     &__search {
         position: absolute;
@@ -27,11 +30,28 @@
         display: inline-block;
         vertical-align: middle;
     }
+    &:after {
+        content: '';
+        display: block;
+        background-color: rgb(223, 221, 225);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+    }
+}
+
+.logo {
+    &__src {
+        width: 157px;
+        height: 50px;
+    }
 }
 
 .contacts-menu {
     float: right;
-    padding: 25px 0px;
+    padding: 16px 0px;
     color: #fff;
     &__item {
         color: #fff;

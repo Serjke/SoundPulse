@@ -11,7 +11,7 @@
             @include opacity(0.6);
             width: 2px;
             height: 100%;
-            background-color: $basecolor;
+            background-color: #7f489c;
         }
     }
     &_left {
@@ -26,7 +26,7 @@
             @include opacity(0.6);
             width: 2px;
             height: 100%;
-            background-color: $basecolor;
+            background-color: #7f489c;
         }
     }
     img {
@@ -56,13 +56,11 @@
     &__back-link {
         display: block;
         // text-decoration: none;
-        color: #fff;
+        color: #7f489c;
         font-weight: bold;
         // padding: 8px 12px;
-        font-size: 18px;
         text-align: center;
         // border: 1px solid $basecolor;
-        color: $basecolor;
         text-transform: uppercase;
         &:hover {
             text-decoration: none
@@ -71,7 +69,7 @@
 }
 
 .sidebar-menu {
-    font-size: 18px;
+    // font-size: 18px;
     // @include box-shadow(0 0 10px rgba(0, 0, 0, 0.7));
     border: 1px solid #ccc;
     &__item {
@@ -104,15 +102,19 @@
             }
         }
     }
-    &__link {
+    &__link,
+    &__label {
         display: block;
         padding: 8px 12px;
         text-decoration: none;
-
+        cursor: pointer;
         color: $basecolor;
         &:hover {
-            background-color: rgba($basecolor, .7);
-            color: #fff;
+            background-color: #dfdde1;
+        }
+        input {
+            vertical-align: baseline;
+            line-height: 0;
         }
     }
 }

@@ -1,26 +1,10 @@
-$basecolor : #7f489c;
+$basecolor : #2f2c2b;
 $dark-blue : #6053a3;
 $blue : #3853a4;
 $violet : #7f489c;
 $gradient : linear-gradient(to right, #673695 0%,#79a0d5 69%,#79a0d5 100%);
 
-@font-face {
-    font-family: 'Futuris';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Futuris'), local('Futuris'),
-        url(fonts/futuris-cyrillic.woff) format('woff'),
-        url(fonts/futuris-cyrillic.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Futuris';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Futuris bold'), local('Futuris bold'),
-        url(fonts/futuris-bold.woff) format('woff'),
-        url(fonts/futuris-bold.ttf) format('truetype');
-}
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
 
 * {
     @include box-sizing(border-box);
@@ -47,10 +31,10 @@ $gradient : linear-gradient(to right, #673695 0%,#79a0d5 69%,#79a0d5 100%);
 }
 
 .page {
-    font-family: 'Helvetica Neue', 'Futuris', sans-serif, Arial;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.4;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+    // font-weight: 300;
+    font-size: 15px;
+    line-height: 1.6;
      -webkit-text-size-adjust: 100%;
      color: $basecolor;
 }

@@ -30,11 +30,11 @@
         text-transform: uppercase;
         font-weight: bold;
         font-size: 26px;
-        color: #fff;
+        color: #000;
         width: 210px;
         margin-bottom: 20px;
         padding-left: 25px;
-        background-color: #6b4ea4;
+        background-color: #e2e3e4;
         text-align: left;
     }
     &__row {
@@ -44,24 +44,6 @@
     }
     &__item {
         margin-top: 20px;
-        &_color_violet {
-            .sections-list__title,
-            .label {
-                background-color: $violet
-            }
-        }
-        &_color_dark-blue {
-            .sections-list__title,
-            .label {
-                background-color: $dark-blue
-            }
-        }
-        &_color_blue {
-            .sections-list__title,
-            .label {
-                background-color : $blue
-            }
-        }
         &:first-child {
             margin-top: 0;
         }
@@ -70,21 +52,6 @@
 }
 
 .media-block {
-    &_color_violet {
-        .label {
-            background-color: $violet
-        }
-    }
-    &_color_dark-blue {
-        .label {
-            background-color: $dark-blue
-        }
-    }
-    &_color_blue {
-        .label {
-            background-color : $blue
-        }
-    }
     &__image {
         margin-bottom: 9px;
         position: relative;
@@ -137,24 +104,19 @@
         color: $basecolor;
         font-weight: bold;
         // font-size: 16px;
-        margin-left: 10px;
-        margin-right: 10px;
 
         display: block;
     }
     &__text {
         color: $basecolor;
-        text-align: justify;
-
-        margin-left: 10px;
-        margin-right: 10px;
+        text-align: left;
 
         display: block;
         &_size_small {
             // font-size: 11px;
         }
         &_line-after {
-            border-bottom: 2px solid rgba($basecolor, .6);
+            border-bottom: 2px solid rgba(#7f489c, .6);
             padding-bottom: 20px;
         }
     }
@@ -185,8 +147,8 @@
         &_4 {
             float: left;
             width: (100% / 4);
-            padding: 0 4px 10px;
-            font-size: 14px;
+            padding: 0 8px 10px;
+            font-size: 13px;
 
         }
         &_5 {
@@ -198,6 +160,7 @@
     }
 }
 .post-information {
+    color: #7f489c;
     &__views {
         float: right;
         padding-right: 18px;
@@ -218,7 +181,7 @@
 }
 
 .label {
-    background-color: #000;
+    background-color: #6b4ea3;
     font-weight: bold;
     padding: 6px 16px;
     line-height: 1;
