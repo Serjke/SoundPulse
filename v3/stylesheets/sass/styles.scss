@@ -1,0 +1,159 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+@import "compass/reset";
+@import "base";
+@import "head";
+@import "navigation-menu";
+@import "slider";
+@import "content";
+@import "news";
+@import "musician";
+@import "sidebar";
+@import "breadcrumbs";
+@import "popular-video";
+@import "about-section";
+@import "footer";
+
+.news_list
+{
+    position: absolute;
+}
+.news-feed__item__text
+{
+    display: block;
+    overflow: hidden;
+
+    padding: 17px 20px;
+
+    color: #000;
+}
+.news-feed__header
+{
+    font-size: 15px;
+    font-weight: 700;
+
+    padding: 15px 10px 15px 20px;
+}
+.news-feed__header__meta
+{
+    font-size: 10px;
+    font-weight: 400;
+
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+
+    margin-top: 6px;
+    padding: 4px 5px;
+
+    vertical-align: top;
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: #a5a5a5;
+    border: 1px solid #d4d4d4;
+}.news-feed__header__text
+{
+    display: inline-block;
+
+    padding-top: 8px;
+    padding-right: 8px;
+
+    vertical-align: top;
+
+    color: #000;
+}
+.news-feed__item_visited-color:visited
+{
+    color: #6b4ea3;
+}
+.article__text a,
+a,
+a[href]
+{
+    text-decoration: none;
+}
+.news-feed__item__date
+{
+    line-height: 14px;
+
+    display: block;
+
+    color: #9b9b9b!important;
+
+    ont-size: 11px;
+}
+.news-feed__header,
+.news-feed__item,
+.news-feed__label,
+.news-feed__toggle
+{
+    border-bottom: 1px solid #ededed;
+}
+.news-feed__item__title
+{
+    line-height: 18px;
+
+    display: block;
+
+    padding-bottom: 13px;
+}
+.article__header__content__inner
+{
+    padding: 0 0 0 0;
+}
+.article__header__info-block
+{
+    font-size: 0;
+
+    margin-bottom: 0;
+}
+.article__header__title
+{
+    font: 700 32px Open-sans,serif;
+
+    margin-bottom: 20px;
+}
+.article__header__counter
+{
+    font-family: ALSStory,'Helvetica CY',Arial,sans-serif;
+    font-size: 11px;
+    line-height: 22px;
+
+    color: #000;
+}
+.social-likes
+{
+    min-height: 34px;
+    margin: -5px;
+}
+.social-likes,
+.social-likes__widget_single
+{
+    font-size: 14px;
+}
+.social-likes,
+.social-likes_single-w
+{
+    line-height: 1.5;
+}
+.social-likes_visible
+{
+    transition: opacity .1s ease-in;
+
+    opacity: 1;
+}
+.social-likes,
+.social-likes__widget
+{
+    display: inline-block;
+
+    padding: 0;
+
+    list-style: none!important;
+
+    vertical-align: middle!important;
+    text-indent: 0!important;
+    word-spacing: 0!important;
+}

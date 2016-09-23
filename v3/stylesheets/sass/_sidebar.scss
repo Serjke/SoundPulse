@@ -1,0 +1,120 @@
+.sidebar {
+    &_right {
+        float: right;
+        margin-right: -240px;
+        width: 200px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 220px;
+            @include opacity(0.6);
+            width: 2px;
+            height: 100%;
+            background-color: #7f489c;
+        }
+    }
+    &_left {
+        float: left;
+        margin-left: -240px;
+        width: 200px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 220px;
+            @include opacity(0.6);
+            width: 2px;
+            height: 100%;
+            background-color: #7f489c;
+        }
+    }
+    img {
+        display: block;
+    }
+    &__item {
+        margin-top: 20px;
+        &:first-child {
+            margin-top: 0;
+        }
+        &_ads {
+            overflow: hidden;
+            width: 200px;
+            height: 400px;
+        }
+    }
+    &__title {
+        @include background-image($gradient);
+        color: #fff;
+        font-weight: bold;
+        padding: 8px 12px;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        z-index: 3;
+    }
+    &__back-link {
+        display: block;
+        // text-decoration: none;
+        color: #7f489c;
+        font-weight: bold;
+        // padding: 8px 12px;
+        text-align: center;
+        // border: 1px solid $basecolor;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none
+        }
+    }
+}
+
+.sidebar-menu {
+    // font-size: 18px;
+    // @include box-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+    border: 1px solid #ccc;
+    &__item {
+        // background-color: #e2e3e4;
+        // @include background-image(linear-gradient(to right,#ffffff 0%, #e2e3e4 50%,#e2e3e4 60%,#ffffff 100%));
+        background-color: #f8f8f8;
+        border-top: 1px solid #ccc;
+        &:first-child {
+            border-top: 0;
+        }
+        &_hidden {
+            display: none;
+        }
+        &_sub {
+            .sidebar-menu__link {
+                color: #3853a4;
+                padding-left: 30px;
+                &:before {
+                    content: '>';
+                    padding-right: 8px;
+                }
+                &_see-all {
+                    font-weight: bold;
+                    &:before {
+                        content: '>>';
+                        padding-right: 8px;
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+    }
+    &__link,
+    &__label {
+        display: block;
+        padding: 8px 12px;
+        text-decoration: none;
+        cursor: pointer;
+        color: $basecolor;
+        &:hover {
+            background-color: #dfdde1;
+        }
+        input {
+            vertical-align: baseline;
+            line-height: 0;
+        }
+    }
+}
